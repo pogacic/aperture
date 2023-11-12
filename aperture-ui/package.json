@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "nuxt": "^3.3.1",
+    "nuxt-simple-robots": "^1.0.5",
+    "nuxt-simple-sitemap": "^1.0.9",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "@nuxt/image-edge": "1.0.0-27991759.1a5eea1",
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@yeger/vue-masonry-wall": "^3.4.4",
+    "daisyui": "^2.51.3",
+    "nuxt3-lazy-load": "^1.0.4",
+    "photoswipe": "^5.3.6",
+    "photoswipe-dynamic-caption-plugin": "^1.2.7"
+  }
+}

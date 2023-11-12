@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  aperture-api:
+    environment:
+      - CORS_ORIGIN=<CHANGE ME>
+    build: ./aperture-api-go
+    volumes:
+      - /opt/aperture_photos:/go/src/app/photos
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  aperture-ui:
+    build: ./aperture-ui
+    depends_on:
+      - aperture-api
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
